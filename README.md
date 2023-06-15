@@ -138,7 +138,7 @@ After looking at the columns above, we considered the following transformation f
     - **Degree 5 (Polynomial) Transformation:** After running an iterative search for the best polynomial degree for `n_ingredients`, we concluded degree=5 would be the best hyperparameter (see errs_df output below). This is because it had the lowest average validation RMSE, which determines best hyperparameters during cross-validation.
 
 Logarithmic Transformation of `calories` vs `n_steps`:
-<iframe src="assets/file-name.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/log_calories.html" width=800 height=600 frameBorder=0></iframe>
 
 `errs_df`: hyperparameters-search for best PolynomialFeatures degree
 
