@@ -137,6 +137,16 @@ After looking at the columns above, we considered the following transformation f
 3. `n_ingredients` PolynomialFeatures:
     - **Degree 5 (Polynomial) Transformation:** After running an iterative search for the best polynomial degree for `n_ingredients`, we concluded degree=5 would be the best hyperparameter (see errs_df output below). This is because it had the lowest average validation RMSE, which determines best hyperparameters during cross-validation.
 
+`errs_df`:
+
+| Validation Fold   |   Deg 5 |   Deg 6 |   Deg 7 |   Deg 8 |   Deg 9 |   Deg 10 |   Deg 11 |
+|:------------------|--------:|--------:|--------:|--------:|--------:|---------:|---------:|
+| Fold 1            | 5.37032 | 5.37056 | 5.36986 | 5.36968 | 5.36662 |  5.35708 |  5.35033 |
+| Fold 2            | 5.37503 | 5.37711 | 5.39059 | 5.55004 | 5.88816 |  5.61469 |  5.6313  |
+| Fold 3            | 5.45436 | 5.45467 | 5.45146 | 5.44858 | 5.44651 |  5.44244 |  5.44442 |
+| Fold 4            | 5.377   | 5.37668 | 5.37291 | 5.36846 | 5.36577 |  5.35764 |  5.34654 |
+| Fold 5            | 5.37231 | 5.37563 | 5.39157 | 5.42175 | 5.44563 |  5.41682 |  5.36766 |
+
 ## Final Model vs Baseline Model
 
 The final model was constructed using **Linear Regression**, a supervised learning algorithm utilized for predicting a continuous outcome variable (or dependent variable) based on one or more predictor variables (or independent variables). The outcome variable we aim to predict in this scenario is 'n_steps', representing the number of steps required to complete a recipe.
