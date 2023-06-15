@@ -74,6 +74,9 @@ The first few rows of cleaned `recipes`:
 2. We then proceeded to conduct further EDA and create bivariate plots to better understand the correlation between our 3 columns of interest (`n_ingredients`, `n_steps`, `minutes`). Scroll down to see our plots and explanatory comments.
 3. We used the .describe() method on the aforementioned columns to learn their summary statistics and other relevant information like outliers. This information was useful to us later on when we were deciding how to transform certain columns.
 
+<iframe src="assets/mins_bivariate.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/ingredients_bivariate.html" width=800 height=600 frameBorder=0></iframe>
+
 ## Prediction Problem and Evaluation Metric
 
 **Prediction Problem:** Predict the number of steps in recipes.
@@ -175,6 +178,8 @@ We define our null hypothesis and alternative hypothesis as follows:
 **Significance level:** 0.05, a commonly chosen value in statistical testing
 
 We performed a permutation test to generate the p-value. In this test, we randomly reassigned the recipes to the two groups, computed the R^2 scores, and calculated the absolute difference for each permutation. We repeated this process 1000 times.
+
+<iframe src="assets/fairness.html" width=800 height=600 frameBorder=0></iframe>
 
 **p-value:** 0.332, representing the proportion of permutations in which the absolute difference in R^2 scores exceeded the observed absolute difference in R^2 scores
 
